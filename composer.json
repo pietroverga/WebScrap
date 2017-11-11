@@ -1,0 +1,21 @@
+{
+  "name": "devpit/ScrapPage",
+  "description": "Scrap site",
+  "authors": [
+    {
+      "name": "devpit",
+      "email": "devpit@pitfactory.it",
+      "homepage": "https://pitfactory.it",
+      "role": "Developer"
+    }
+  ],
+  "type": "client",
+  "require": {
+    "php": ">5"
+  },
+  "autoload": {
+    "psr-0": {
+      "devpit\\ScrapPage\\": "src/"
+    }
+  }
+}
