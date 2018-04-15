@@ -7,7 +7,7 @@
 ```
 require_once 'vendor/autoload.php';
 $yourSite = '';
-$session = new \devpit\ScrapPage\Scrap($yourSite);
+$session = new \devpit\WebScrap\Scrap($yourSite);
 ```
 
 
