@@ -1,4 +1,4 @@
-# WebScrap
+# WebScrap [![StyleCI](https://styleci.io/repos/110293825/shield?branch=master)](https://styleci.io/repos/110293825)
 
 **Do Web-Scrap simply!**
 
