@@ -15,5 +15,4 @@ namespace devpit\WebScrap;
 
 class Exception extends \Exception
 {
-
 }
