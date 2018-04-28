@@ -57,7 +57,7 @@ class Scrap
             curl_setopt($r, CURLOPT_VERBOSE, 0);
             curl_setopt($r, CURLOPT_HEADER, 0);
             curl_setopt($r, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($r, CURLOPT_URL, urlencode($this->site));
+            curl_setopt($r, CURLOPT_URL, $this->site);
             $ch = curl_exec($r);
             curl_close($r);
             if ($ch) {
