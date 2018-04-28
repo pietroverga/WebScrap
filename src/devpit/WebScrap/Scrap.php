@@ -53,7 +53,13 @@ class Scrap
     public function scrapSite()
     {
         if ($this->fpoint and $this->spoint) {
-            $ch = @file_get_contents($this->site);
+            $r = curl_init();
+            curl_setopt($r, CURLOPT_VERBOSE, 0);
+            curl_setopt($r, CURLOPT_HEADER, 0);
+            curl_setopt($r, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($r, CURLOPT_URL, urlencode($this->site));
+            $ch = curl_exec($r);
+            curl_close($r);
             if ($ch) {
                 $pos1 = strpos($ch, $this->fpoint);
                 $pos2 = strpos($ch, $this->spoint, $pos1);
