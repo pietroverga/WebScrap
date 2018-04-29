@@ -33,7 +33,7 @@ class Scrap
             }
         } else {
             $this->site = $site;
-            
+
             return true;
         }
     }
