@@ -32,6 +32,8 @@ class Scrap
                 throw new Exception('Invalid site');
             }
         } else {
+            $this->site = $site;
+            
             return true;
         }
     }
