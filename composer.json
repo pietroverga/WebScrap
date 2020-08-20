@@ -10,7 +10,6 @@
       "role": "Developer"
     }
   ],
-  "type": "client",
   "require": {
     "php": ">5",
     "ext-curl": "*"
